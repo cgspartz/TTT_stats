@@ -206,7 +206,7 @@ dequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(
 
 ```{r TEBought, fig.height=10, fig.width=12}
 tequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>%
-  ggplot(aes(x=stat,y=overallTimesBought)) + geom_bar(stat="Identity") + geom_text(aes(label=overallTimesBought), vjust=1.6, color="Red", size=2.5) + ggtitle("Times each detective equipment was bought") +
+  ggplot(aes(x=stat,y=overallTimesBought)) + geom_bar(stat="Identity") + geom_text(aes(label=overallTimesBought), vjust=1.6, color="Red", size=2.5) + ggtitle("Times each traitor equipment was bought") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 tequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
 ```
@@ -220,7 +220,7 @@ tequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(eq
 
 
 
-```{r Traitor-Equipment, fig.height=10, fig.width=20}
+```{r Traitor-Equipment, fig.height=18, fig.width=15}
 tequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=6, scales = "free_y") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
