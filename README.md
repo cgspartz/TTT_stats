@@ -1,1 +1,1 @@
-# TTT_stats
+TTT (Trouble in Terrorist Town) from Garry's Mod statistics from March of 2021 until November 2021. These stats attempt to analyze some of the occurences throughout the games we play. These stats are from approximately 580 rounds of TTT. The Player_Names here are the steam usernames of the 10 players in the TTT server.
