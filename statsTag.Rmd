@@ -17,6 +17,7 @@ library(readxl)
 pstats <- read_excel('TTTStatsTag.xlsx', sheet='PlayerStats')
 tpartners <- read_excel('TTTStatsTag.xlsx', sheet='TraitorPartners')
 dequip <- read_excel('TTTStatsTag.xlsx', sheet='DetectiveEquipment')
+tequip <- read_excel('TTTStatsTag.xlsx', sheet='TraitorEquipment')
 ```
 ```{r, include=FALSE}
 pstats$Player_Name <- as.factor(pstats$Player_Name)
@@ -45,6 +46,16 @@ dequipClean <- dequip %>% pivot_longer(
   values_drop_na = TRUE
 )
 ```
+```{r}
+tequip$Player_Name <- as.factor(tequip$Player_Name)
+tequipClean <- tequip %>% pivot_longer(
+  !c('Player_Name'),
+  names_to="stat",
+  values_to="count",
+  values_drop_na = TRUE
+)
+```
+
 
 ```{r, include=FALSE}
 overallStatP <- pstatsClean %>% group_by(stat) %>% summarise(overall = sum(count))
@@ -70,6 +81,11 @@ pstats %>% group_by(Player_Name,TraitorRounds,TraitorWins) %>%
   summarise(winPercent=TraitorWins/TraitorRounds) %>%
   arrange(desc(winPercent))
 ```
+```{r Traitor-Percent}
+pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=TraitorRounds/TotalRoundsPlayed) %>% 
+  ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as traitor") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
 
 ```{r Innocent}
 ggplot(pstats,aes(x=InnocentWins, y=InnocentRounds, fill=Player_Name)) + geom_point() + ggtitle("Innocent Rounds vs. Innocent wins") +
@@ -83,6 +99,12 @@ pstats %>% group_by(Player_Name,InnocentRounds,InnocentWins) %>%
   summarise(winPercent=InnocentWins/InnocentRounds) %>%
   arrange(desc(winPercent))
 ```
+```{r Innocent-Percent}
+pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=InnocentRounds/TotalRoundsPlayed) %>% 
+  ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as innocent") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
 
 ```{r Detective}
 ggplot(pstats,aes(x=DetectiveWins, y=DetectiveRounds, fill=Player_Name)) + geom_point() + ggtitle("Detective Rounds vs. Detective wins") +
@@ -95,6 +117,11 @@ ggplot(pstats,aes(x=DetectiveWins, y=DetectiveRounds, fill=Player_Name)) + geom_
 pstats %>% group_by(Player_Name,DetectiveRounds,DetectiveWins) %>% 
   summarise(winPercent=DetectiveWins/DetectiveRounds) %>%
   arrange(desc(winPercent))
+```
+```{r Detective-Percent}
+pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=DetectiveRounds/TotalRoundsPlayed) %>% 
+  ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as detective") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
 
 ```{r Zombie}
@@ -109,7 +136,11 @@ pstats %>% group_by(Player_Name,Zombiewins,ZombieRounds) %>%
   summarise(winPercent=Zombiewins/ZombieRounds) %>%
   arrange(desc(winPercent))
 ```
-
+```{r Zombie-Percent}
+pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=ZombieRounds/TotalRoundsPlayed) %>% 
+  ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as zombie") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
 
 ```{r Hypnotist}
 ggplot(pstats,aes(x=HypnotistWins, y=HypnotistRounds, fill=Player_Name)) + geom_point() + ggtitle("Hypnotist Rounds vs. Hypnotist wins") +
@@ -122,6 +153,11 @@ ggplot(pstats,aes(x=HypnotistWins, y=HypnotistRounds, fill=Player_Name)) + geom_
 pstats %>% group_by(Player_Name,HypnotistWins,HypnotistRounds) %>% 
   summarise(winPercent=HypnotistWins/HypnotistRounds) %>%
   arrange(desc(winPercent))
+```
+```{r Hypnotist-Percent}
+pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=HypnotistRounds/TotalRoundsPlayed) %>% 
+  ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as hypnotist") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
 
 ```{r CrookedCop}
@@ -166,4 +202,27 @@ dequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(eq
 dequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=5, scales = "free_y") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
+
+
+```{r TEBought, fig.height=10, fig.width=12}
+tequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>%
+  ggplot(aes(x=stat,y=overallTimesBought)) + geom_bar(stat="Identity") + geom_text(aes(label=overallTimesBought), vjust=1.6, color="Red", size=2.5) + ggtitle("Times each detective equipment was bought") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+tequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
+```
+```{r MostBasicTraitor}
+tequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(equipBought=n()) %>% 
+  ggplot(aes(x=Player_Name,y=equipBought, fill=Player_Name)) + geom_bar(stat = "Identity")  +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) + 
+  ggtitle("Number of different traitor equipment bought")
+
+```
+
+
+
+```{r Traitor-Equipment, fig.height=10, fig.width=20}
+tequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=6, scales = "free_y") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
 
