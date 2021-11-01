@@ -1,0 +1,160 @@
+---
+title: "TTT stats from March 2021 until November 2021"
+author: "Christopher Spartz"
+date: "10/30/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, include=FALSE}
+library(tidyverse)
+library(ggplot2)
+library(ggrepel)
+library(readxl)
+pstats <- read_excel('TTTStatsTag.xlsx', sheet='PlayerStats')
+tpartners <- read_excel('TTTStatsTag.xlsx', sheet='TraitorPartners')
+dequip <- read_excel('TTTStatsTag.xlsx', sheet='DetectiveEquipment')
+```
+```{r, include=FALSE}
+pstats$Player_Name <- as.factor(pstats$Player_Name)
+pstatsClean <- pstats %>% pivot_longer(
+  !c('Player_Name'),
+  names_to="stat",
+  values_to="count",
+  values_drop_na = TRUE
+)
+```
+```{r, include=FALSE}
+tpartners$Player_Name <- as.factor(tpartners$Player_Name)
+tpartnersClean <- tpartners %>% pivot_longer(
+  !c('Player_Name'),
+  names_to="stat",
+  values_to="count",
+  values_drop_na = TRUE
+)
+```
+```{r, include=FALSE}
+dequip$Player_Name <- as.factor(dequip$Player_Name)
+dequipClean <- dequip %>% pivot_longer(
+  !c('Player_Name'),
+  names_to="stat",
+  values_to="count",
+  values_drop_na = TRUE
+)
+```
+
+```{r, include=FALSE}
+overallStatP <- pstatsClean %>% group_by(stat) %>% summarise(overall = sum(count))
+overallStatTP <- tpartnersClean %>% group_by(stat) %>% summarise(overall = sum(count))
+overallStatD <- dequipClean %>% group_by(stat) %>% summarise(overall = sum(count))
+```
+
+This Graph here shows off the total rounds played of each player
+```{r Rounds}
+ggplot(pstats, aes(y=TotalRoundsPlayed,x=Player_Name)) + geom_bar(stat = "Identity") + geom_text(aes(label=TotalRoundsPlayed), vjust=1.6, color="white", size=3.5) + ggtitle("Total Rounds Played") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
+```{r Traitor}
+ggplot(pstats,aes(x=TraitorWins, y=TraitorRounds)) + geom_point() + ggtitle("Traitor Rounds vs. Traitor wins") +
+  geom_label_repel(aes(label = Player_Name),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
+
+pstats %>% group_by(Player_Name,TraitorRounds,TraitorWins) %>% 
+  summarise(winPercent=TraitorWins/TraitorRounds) %>%
+  arrange(desc(winPercent))
+```
+
+```{r Innocent}
+ggplot(pstats,aes(x=InnocentWins, y=InnocentRounds)) + geom_point() + ggtitle("Innocent Rounds vs. Innocent wins") +
+  geom_label_repel(aes(label = Player_Name),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
+
+pstats %>% group_by(Player_Name,InnocentRounds,InnocentWins) %>% 
+  summarise(winPercent=InnocentWins/InnocentRounds) %>%
+  arrange(desc(winPercent))
+```
+
+```{r Detective}
+ggplot(pstats,aes(x=DetectiveWins, y=DetectiveRounds)) + geom_point() + ggtitle("Detective Rounds vs. Detective wins") +
+  geom_label_repel(aes(label = Player_Name),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
+
+pstats %>% group_by(Player_Name,DetectiveRounds,DetectiveWins) %>% 
+  summarise(winPercent=DetectiveWins/DetectiveRounds) %>%
+  arrange(desc(winPercent))
+```
+
+```{r Zombie}
+ggplot(pstats,aes(x=Zombiewins, y=ZombieRounds)) + geom_point() + ggtitle("Zombie Rounds vs. Zombie wins") +
+  geom_label_repel(aes(label = Player_Name),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
+
+pstats %>% group_by(Player_Name,Zombiewins,ZombieRounds) %>% 
+  summarise(winPercent=Zombiewins/ZombieRounds) %>%
+  arrange(desc(winPercent))
+```
+
+
+```{r Hypnotist}
+ggplot(pstats,aes(x=HypnotistWins, y=HypnotistRounds)) + geom_point() + ggtitle("Hypnotist Rounds vs. Hypnotist wins") +
+  geom_label_repel(aes(label = Player_Name),
+                  box.padding   = 0.35, 
+                  point.padding = 0.5,
+                  segment.color = 'grey50') +
+  theme_classic()
+
+pstats %>% group_by(Player_Name,HypnotistWins,HypnotistRounds) %>% 
+  summarise(winPercent=HypnotistWins/HypnotistRounds) %>%
+  arrange(desc(winPercent))
+```
+
+```{r CrookedCop}
+ggplot(pstats,aes(x=Player_Name, y=CrookedCop)) + geom_bar(stat="identity") + geom_text(aes(label=CrookedCop), vjust=1.6, color="white", size=3.5) + ggtitle("Amount of Innocents killed as detective") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+pstats %>% group_by(Player_Name, DetectiveRounds, CrookedCop) %>% 
+  summarise(Crookedeness=CrookedCop/DetectiveRounds) %>%
+  arrange(desc(Crookedeness))
+```
+
+```{r TriggerHappy}
+ggplot(pstats,aes(x=Player_Name, y=TriggerHappyInnocent)) + geom_bar(stat="identity") + geom_text(aes(label=TriggerHappyInnocent), vjust=1.6, color="white", size=3.5) + ggtitle("Amount of Innocents killed as an Innocent") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+pstats %>% group_by(Player_Name, InnocentRounds, TriggerHappyInnocent) %>% 
+  summarise(Shootyness=TriggerHappyInnocent/InnocentRounds) %>%
+  arrange(desc(Shootyness))
+```
+
+```{r Ledges}
+ggplot(pstats,aes(x=Player_Name,y=TotalFallDamage)) + geom_bar(stat = "Identity")  + geom_text(aes(label=TotalFallDamage), vjust=1.6, color="Blue", size=3.5) + ggtitle("People least safe near ledges") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+
+
+```{r DEBought}
+dequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>%
+  ggplot(aes(x=stat,y=overallTimesBought)) + geom_bar(stat="Identity") + geom_text(aes(label=overallTimesBought), vjust=1.6, color="Red", size=2.5) + ggtitle("Times each detective equipment was bought") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+dequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
+```
+
+```{r Detective-Equipment, fig.height=10, fig.width=12}
+dequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=5, scales = "free_y") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+```
+

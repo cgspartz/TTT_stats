@@ -1,0 +1,1284 @@
+{
+  "pKing_Nuggets": {
+    "KillerWins": 2,
+    "MercenaryRounds": 16,
+    "JesterRounds": 0,
+    "KillerRounds": 8,
+    "KilledFirst": 64,
+    "GlitchWins": 0,
+    "HypnotistRounds": 13,
+    "TotalRoundsPlayed": 500,
+    "InnocentRounds": 259,
+    "AssassinRounds": 5,
+    "HypnotistWins": 3,
+    "AssassinWins": 1,
+    "DetectiveWins": 38,
+    "VampireRounds": 0,
+    "Nickname": "King_Nuggets",
+    "JesterWins": 0,
+    "InnocentWins": 153,
+    "CrookedCop": 29,
+    "DetectiveRounds": 59,
+    "TriggerHappyInnocent": 71,
+    "SwapperWins": 11,
+    "ZombieRounds": 29,
+    "TraitorPartners": {
+      "nuzzels": {
+        "Rounds": 13,
+        "Wins": 6,
+        "Nick": "nuzzels"
+      },
+      "MrBoy": {
+        "Rounds": 13,
+        "Wins": 4,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 17,
+        "Wins": 5,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 11,
+        "Wins": 3,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 11,
+        "Wins": 1,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 11,
+        "Wins": 4,
+        "Nick": "ghostNINJA-72"
+      },
+      "TARTARI": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "TARTARI"
+      },
+      "silentscout9909": {
+        "Rounds": 15,
+        "Wins": 7,
+        "Nick": "silentscout9909"
+      },
+      "FunLiberal": {
+        "Rounds": 12,
+        "Wins": 3,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 11,
+    "TotalFallDamage": 2437,
+    "TraitorEquipment": {
+      "Health Station": 3,
+      "Holy Hand Grenade": 12,
+      "Chickenator": 3,
+      "Eagleflight Gun": 1,
+      "Grenade Launcher": 2,
+      "Silenced M4A1": 2,
+      "RPG": 1,
+      "Martyrdom": 2,
+      "Traitorfier": 4,
+      "AK47": 1,
+      "Blue Bull": 1,
+      "Stamin-Up": 6,
+      "Flesh Wound": 2,
+      "Defibrillator": 4,
+      "DoubleTap Root Beer": 20,
+      "Speed Cola Perk.": 8,
+      "Moto Moto": 1,
+      "Gnome Grenade": 3,
+      "Manipulation Knife": 1,
+      "Delayed Deagle": 1,
+      "Random Launcher": 1,
+      "Zombie Vault": 2,
+      "PHD Flopper Perk.": 14,
+      "Poltergeist": 1,
+      "Body Armor": 20,
+      "Grapple Hook": 9,
+      "Artillery Cannon": 1,
+      "Radar": 27,
+      "Juggernog": 1,
+      "item_wallhack": 46
+    },
+    "ZombieWins": 14,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 32,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 92,
+    "SwapperRounds": 19,
+    "DetectiveEquipment": {
+      "The T-Suitcase": 6,
+      "Bruh Bunker": 10,
+      "Stungun": 8,
+      "clairvoyant_perk_name": 2,
+      "Mystery Box": 1,
+      "Blue Bull": 4,
+      "Gigafier": 1,
+      "DoubleTap Root Beer": 8,
+      "Speed Cola Perk.": 10,
+      "Riotshield": 1,
+      "golden_deagle_name": 13,
+      "Juggernog": 1,
+      "Handcuffs": 2,
+      "Dragon Elites": 3,
+      "Freeze Gun": 3,
+      "PHD Flopper Perk.": 9,
+      "Command Prompt": 9,
+      "Body Armor": 3,
+      "Lightning AR1": 1,
+      "Stamin-Up": 3,
+      "juggernaut_suit_name": 3,
+      "Radar": 8,
+      "Health Station": 2
+    }
+  },
+  "psilentscout9909": {
+    "KillerWins": 2,
+    "MercenaryRounds": 12,
+    "JesterRounds": 0,
+    "KillerRounds": 6,
+    "KilledFirst": 87,
+    "GlitchWins": 0,
+    "HypnotistRounds": 9,
+    "TotalRoundsPlayed": 589,
+    "InnocentRounds": 286,
+    "AssassinRounds": 5,
+    "HypnotistWins": 4,
+    "AssassinWins": 1,
+    "DetectiveWins": 41,
+    "VampireRounds": 0,
+    "Nickname": "silentscout9909",
+    "JesterWins": 0,
+    "InnocentWins": 187,
+    "CrookedCop": 9,
+    "DetectiveRounds": 73,
+    "TriggerHappyInnocent": 50,
+    "SwapperWins": 12,
+    "ZombieRounds": 46,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 15,
+        "Wins": 7,
+        "Nick": "King_Nuggets"
+      },
+      "TARTARI": {
+        "Rounds": 6,
+        "Wins": 1,
+        "Nick": "TARTARI"
+      },
+      "MrBoy": {
+        "Rounds": 16,
+        "Wins": 6,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 26,
+        "Wins": 16,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 24,
+        "Wins": 5,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 8,
+        "Wins": 2,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "ghostNINJA-72"
+      },
+      "nuzzels": {
+        "Rounds": 24,
+        "Wins": 18,
+        "Nick": "nuzzels"
+      },
+      "FunLiberal": {
+        "Rounds": 17,
+        "Wins": 6,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 11,
+    "TotalFallDamage": 3385,
+    "TraitorEquipment": {
+      "Oblivion Magic": 1,
+      "Orbital Headcrab Launcher": 7,
+      "Eagleflight Gun": 36,
+      "Blink": 2,
+      "Radar": 18,
+      "Traitorfier": 1,
+      "Thwomp": 2,
+      "Donconnon MKII": 18,
+      "Gnome Grenade": 1,
+      "Zombie Vault": 6,
+      "Fassinator": 1,
+      "Beenade": 5,
+      "PHD Flopper Perk.": 23,
+      "Antlion Summoner": 13,
+      "Stamin-Up": 23,
+      "item_wallhack": 13,
+      "I like your cut g": 1,
+      "Chickenator": 1,
+      "Medkit": 1,
+      "Flesh Wound": 66,
+      "Juggernog": 1,
+      "RDMPass": 1,
+      "Defibrillator": 2,
+      "Silenced AWP": 6,
+      "Speed Cola Perk.": 16,
+      "Moto Moto": 22,
+      "Katana": 3,
+      "Body Armor": 114,
+      "Random Launcher": 1,
+      "Artillery Cannon": 4,
+      "The World": 16,
+      "DoubleTap Root Beer": 27,
+      "Health Station": 6
+    },
+    "ZombieWins": 25,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 58,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 128,
+    "SwapperRounds": 24,
+    "DetectiveEquipment": {
+      "Oblivion Magic": 5,
+      "The T-Suitcase": 1,
+      "Bruh Bunker": 1,
+      "Star Platinum": 8,
+      "Radar": 7,
+      "Mystery Box": 4,
+      "Juggernog": 1,
+      "DoubleTap Root Beer": 7,
+      "Speed Cola Perk.": 5,
+      "golden_deagle_name": 14,
+      "Random Tester": 10,
+      "PHD Flopper Perk.": 13,
+      "Health Station": 4,
+      "Body Armor": 43,
+      "Lightning AR1": 2,
+      "Stamin-Up": 8,
+      "juggernaut_suit_name": 5,
+      "Minecraft Block": 2,
+      "Command Prompt": 12
+    }
+  },
+  "pMrBoy": {
+    "KillerWins": 2,
+    "MercenaryRounds": 6,
+    "JesterRounds": 0,
+    "KillerRounds": 9,
+    "KilledFirst": 60,
+    "GlitchWins": 0,
+    "HypnotistRounds": 14,
+    "TotalRoundsPlayed": 491,
+    "InnocentRounds": 254,
+    "AssassinRounds": 2,
+    "HypnotistWins": 6,
+    "AssassinWins": 2,
+    "DetectiveWins": 40,
+    "VampireRounds": 0,
+    "Nickname": "MrBoy",
+    "JesterWins": 0,
+    "InnocentWins": 151,
+    "CrookedCop": 13,
+    "DetectiveRounds": 69,
+    "TriggerHappyInnocent": 62,
+    "SwapperWins": 13,
+    "ZombieRounds": 29,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 13,
+        "Wins": 4,
+        "Nick": "King_Nuggets"
+      },
+      "nuzzels": {
+        "Rounds": 14,
+        "Wins": 5,
+        "Nick": "nuzzels"
+      },
+      "Amazingbro17": {
+        "Rounds": 10,
+        "Wins": 3,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 6,
+        "Wins": 2,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 7,
+        "Wins": 0,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 16,
+        "Wins": 7,
+        "Nick": "ghostNINJA-72"
+      },
+      "TARTARI": {
+        "Rounds": 2,
+        "Wins": 1,
+        "Nick": "TARTARI"
+      },
+      "silentscout9909": {
+        "Rounds": 16,
+        "Wins": 6,
+        "Nick": "silentscout9909"
+      },
+      "FunLiberal": {
+        "Rounds": 17,
+        "Wins": 4,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 5,
+    "TotalFallDamage": 2411,
+    "TraitorEquipment": {
+      "AK47": 21,
+      "Silenced M4A1": 1,
+      "Eagleflight Gun": 6,
+      "Grenade Launcher": 8,
+      "Fortnite Building": 9,
+      "Traitorfier": 2,
+      "Silenced AWP": 38,
+      "Blue Bull": 2,
+      "Holy Hand Grenade": 24,
+      "Gnome Grenade": 10,
+      "Donconnon MKII": 3,
+      "DoubleTap Root Beer": 12,
+      "Speed Cola Perk.": 6,
+      "Moto Moto": 2,
+      "Poltergeist": 5,
+      "Stamin-Up": 6,
+      "Grapple Hook": 4,
+      "Body Armor": 83,
+      "Newton Launcher": 1,
+      "PHD Flopper Perk.": 8,
+      "Bullet Bill": 4,
+      "Manipulation Knife": 1,
+      "Antlion Summoner": 8,
+      "Artillery Cannon": 7,
+      "Juggernog": 1,
+      "Radar": 36,
+      "Health Station": 9
+    },
+    "ZombieWins": 18,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 24,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 87,
+    "SwapperRounds": 21,
+    "DetectiveEquipment": {
+      "DoubleTap Root Beer": 7,
+      "Speed Cola Perk.": 6,
+      "The T-Suitcase": 39,
+      "golden_deagle_name": 5,
+      "Gigafier": 1,
+      "Star Platinum": 1,
+      "Minecraft Block": 13,
+      "TMP Prototype": 1,
+      "PHD Flopper Perk.": 6,
+      "Visualizer": 1,
+      "Body Armor": 37,
+      "Blue Bull": 4,
+      "Stamin-Up": 2,
+      "Radar": 12,
+      "Fortnite Building": 14,
+      "Health Station": 6
+    }
+  },
+  "pAmazingbro17": {
+    "KillerWins": 1,
+    "MercenaryRounds": 16,
+    "JesterRounds": 0,
+    "KillerRounds": 8,
+    "KilledFirst": 88,
+    "GlitchWins": 0,
+    "HypnotistRounds": 11,
+    "TotalRoundsPlayed": 508,
+    "InnocentRounds": 258,
+    "AssassinRounds": 4,
+    "HypnotistWins": 9,
+    "AssassinWins": 2,
+    "DetectiveWins": 45,
+    "VampireRounds": 0,
+    "Nickname": "Amazingbro17",
+    "JesterWins": 0,
+    "InnocentWins": 166,
+    "CrookedCop": 18,
+    "DetectiveRounds": 74,
+    "TriggerHappyInnocent": 33,
+    "SwapperWins": 9,
+    "ZombieRounds": 29,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 17,
+        "Wins": 5,
+        "Nick": "King_Nuggets"
+      },
+      "TARTARI": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "TARTARI"
+      },
+      "MrBoy": {
+        "Rounds": 10,
+        "Wins": 3,
+        "Nick": "MrBoy"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 10,
+        "Wins": 4,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 11,
+        "Wins": 2,
+        "Nick": "ghostNINJA-72"
+      },
+      "silentscout9909": {
+        "Rounds": 26,
+        "Wins": 16,
+        "Nick": "silentscout9909"
+      },
+      "nuzzels": {
+        "Rounds": 15,
+        "Wins": 9,
+        "Nick": "nuzzels"
+      },
+      "FunLiberal": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 9,
+    "TotalFallDamage": 5800,
+    "TraitorEquipment": {
+      "Oblivion Magic": 1,
+      "The T-Suitcase": 3,
+      "Silenced M4A1": 1,
+      "Eagleflight Gun": 3,
+      "SlowMotion Gun": 1,
+      "Teleporter": 7,
+      "Fortnite Building": 7,
+      "Juggernog": 1,
+      "Silenced AWP": 36,
+      "Blue Bull": 11,
+      "Radar": 18,
+      "Gigafier": 1,
+      "Donconnon MKII": 3,
+      "DoubleTap Root Beer": 11,
+      "Speed Cola Perk.": 14,
+      "Moto Moto": 2,
+      "Gnome Grenade": 2,
+      "Popup Gun": 1,
+      "Katana": 18,
+      "Frag Grenade": 1,
+      "Freeze Gun": 1,
+      "PHD Flopper Perk.": 24,
+      "Bullet Bill": 13,
+      "Body Armor": 35,
+      "Antlion Summoner": 62,
+      "Stamin-Up": 4,
+      "Defibrillator": 1,
+      "Deagle V2": 29,
+      "Health Station": 12
+    },
+    "ZombieWins": 16,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 37,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 94,
+    "SwapperRounds": 14,
+    "DetectiveEquipment": {
+      "Deagle V2": 3,
+      "The T-Suitcase": 12,
+      "Star Platinum": 2,
+      "Teleporter": 1,
+      "Fortnite Building": 6,
+      "Mystery Box": 5,
+      "Blue Bull": 8,
+      "Gigafier": 2,
+      "DoubleTap Root Beer": 7,
+      "Speed Cola Perk.": 4,
+      "golden_deagle_name": 42,
+      "Minecraft Block": 8,
+      "Health Station": 4,
+      "PHD Flopper Perk.": 16,
+      "juggernaut_suit_name": 1,
+      "Body Armor": 12,
+      "Stungun": 2,
+      "Stamin-Up": 4,
+      "Radar": 3,
+      "Random Tester": 1,
+      "Command Prompt": 23
+    }
+  },
+  "pJeff_the_Shark": {
+    "KillerWins": 0,
+    "MercenaryRounds": 10,
+    "JesterRounds": 0,
+    "KillerRounds": 8,
+    "KilledFirst": 43,
+    "GlitchWins": 0,
+    "HypnotistRounds": 20,
+    "TotalRoundsPlayed": 527,
+    "InnocentRounds": 265,
+    "AssassinRounds": 4,
+    "HypnotistWins": 6,
+    "AssassinWins": 2,
+    "DetectiveWins": 36,
+    "VampireRounds": 0,
+    "Nickname": "Jeff_the_Shark",
+    "JesterWins": 0,
+    "InnocentWins": 168,
+    "CrookedCop": 13,
+    "DetectiveRounds": 66,
+    "TriggerHappyInnocent": 34,
+    "SwapperWins": 14,
+    "ZombieRounds": 37,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 11,
+        "Wins": 3,
+        "Nick": "King_Nuggets"
+      },
+      "silentscout9909": {
+        "Rounds": 24,
+        "Wins": 5,
+        "Nick": "silentscout9909"
+      },
+      "MrBoy": {
+        "Rounds": 6,
+        "Wins": 2,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "Amazingbro17"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 6,
+        "Wins": 1,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 17,
+        "Wins": 5,
+        "Nick": "ghostNINJA-72"
+      },
+      "TARTARI": {
+        "Rounds": 6,
+        "Wins": 0,
+        "Nick": "TARTARI"
+      },
+      "nuzzels": {
+        "Rounds": 17,
+        "Wins": 7,
+        "Nick": "nuzzels"
+      },
+      "FunLiberal": {
+        "Rounds": 13,
+        "Wins": 5,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 7,
+    "TotalFallDamage": 1355,
+    "TraitorEquipment": {
+      "AK47": 16,
+      "Silenced M4A1": 1,
+      "Radar": 60,
+      "Blue Bull": 1,
+      "Defibrillator": 15,
+      "DoubleTap Root Beer": 7,
+      "Speed Cola Perk.": 25,
+      "Moto Moto": 1,
+      "Gnome Grenade": 5,
+      "Katana": 53,
+      "Beenade": 1,
+      "PHD Flopper Perk.": 6,
+      "Body Armor": 80,
+      "Juggernog": 1,
+      "Stamin-Up": 6,
+      "The World": 10,
+      "Martyrdom": 1,
+      "Health Station": 12
+    },
+    "ZombieWins": 22,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 24,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 89,
+    "SwapperRounds": 28,
+    "DetectiveEquipment": {
+      "DoubleTap Root Beer": 7,
+      "Speed Cola Perk.": 17,
+      "Riotshield": 3,
+      "golden_deagle_name": 32,
+      "Star Platinum": 4,
+      "PHD Flopper Perk.": 2,
+      "Radar": 19,
+      "Body Armor": 29,
+      "Stamin-Up": 6,
+      "Juggernog": 1,
+      "Health Station": 3
+    }
+  },
+  "pTheMathGeek_314": {
+    "PhantomRounds": 0,
+    "MercenaryRounds": 10,
+    "JesterRounds": 0,
+    "KillerRounds": 2,
+    "KilledFirst": 35,
+    "GlitchWins": 0,
+    "HypnotistRounds": 7,
+    "TotalRoundsPlayed": 350,
+    "InnocentRounds": 191,
+    "AssassinRounds": 2,
+    "HypnotistWins": 2,
+    "AssassinWins": 1,
+    "GlitchRounds": 0,
+    "VampireRounds": 0,
+    "Nickname": "TheMathGeek_314",
+    "JesterWins": 0,
+    "InnocentWins": 108,
+    "CrookedCop": 11,
+    "DetectiveRounds": 42,
+    "TriggerHappyInnocent": 19,
+    "SwapperWins": 5,
+    "ZombieRounds": 23,
+    "TraitorPartners": {
+      "Jeff_the_Shark": {
+        "Rounds": 6,
+        "Wins": 1,
+        "Nick": "Jeff_the_Shark"
+      },
+      "King_Nuggets": {
+        "Rounds": 11,
+        "Wins": 1,
+        "Nick": "King_Nuggets"
+      },
+      "FunLiberal": {
+        "Rounds": 12,
+        "Wins": 2,
+        "Nick": "FunLiberal"
+      },
+      "silentscout9909": {
+        "Rounds": 8,
+        "Wins": 2,
+        "Nick": "silentscout9909"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 9,
+        "Wins": 2,
+        "Nick": "ghostNINJA-72"
+      },
+      "nuzzels": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "nuzzels"
+      },
+      "MrBoy": {
+        "Rounds": 7,
+        "Wins": 0,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 10,
+        "Wins": 4,
+        "Nick": "Amazingbro17"
+      }
+    },
+    "DetectiveEquipment": {
+      "DoubleTap Root Beer": 2,
+      "Speed Cola Perk.": 2,
+      "The T-Suitcase": 12,
+      "golden_deagle_name": 15,
+      "Minecraft Block": 8,
+      "PHD Flopper Perk.": 2,
+      "Lightning AR1": 2,
+      "Mystery Box": 1,
+      "Star Platinum": 6,
+      "Stamin-Up": 2,
+      "Oblivion Magic": 3,
+      "Random Tester": 2,
+      "Body Armor": 1
+    },
+    "TotalFallDamage": 1328,
+    "TraitorEquipment": {
+      "I like your cut g": 2,
+      "Orbital Headcrab Launcher": 4,
+      "Holy Hand Grenade": 4,
+      "Eagleflight Gun": 17,
+      "Radar": 6,
+      "Thwomp": 4,
+      "C4 Charge": 1,
+      "Donconnon MKII": 7,
+      "DoubleTap Root Beer": 8,
+      "Speed Cola Perk.": 7,
+      "Moto Moto": 7,
+      "Gnome Grenade": 1,
+      "Popup Gun": 1,
+      "Katana": 1,
+      "Beenade": 3,
+      "Peacekeeper": 2,
+      "Bullet Bill": 4,
+      "Antlion Summoner": 5,
+      "Stamin-Up": 3,
+      "The World": 3,
+      "PHD Flopper Perk.": 9,
+      "Tripwire Mine": 4
+    },
+    "MercenaryWins": 5,
+    "TraitorRounds": 62,
+    "PhantomWins": 0,
+    "TraitorWins": 13,
+    "DetectiveWins": 24,
+    "VampireWins": 0,
+    "KillerWins": 0,
+    "SwapperRounds": 11,
+    "ZombieWins": 14
+  },
+  "pghostNINJA-72": {
+    "KillerWins": 0,
+    "MercenaryRounds": 10,
+    "JesterRounds": 0,
+    "KillerRounds": 7,
+    "KilledFirst": 76,
+    "GlitchWins": 0,
+    "HypnotistRounds": 10,
+    "TotalRoundsPlayed": 420,
+    "InnocentRounds": 213,
+    "AssassinRounds": 1,
+    "HypnotistWins": 5,
+    "AssassinWins": 0,
+    "DetectiveWins": 30,
+    "VampireRounds": 0,
+    "Nickname": "ghostNINJA-72",
+    "JesterWins": 0,
+    "InnocentWins": 123,
+    "CrookedCop": 31,
+    "DetectiveRounds": 49,
+    "TriggerHappyInnocent": 83,
+    "SwapperWins": 11,
+    "ZombieRounds": 20,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 11,
+        "Wins": 4,
+        "Nick": "King_Nuggets"
+      },
+      "nuzzels": {
+        "Rounds": 13,
+        "Wins": 5,
+        "Nick": "nuzzels"
+      },
+      "MrBoy": {
+        "Rounds": 16,
+        "Wins": 7,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 11,
+        "Wins": 2,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 17,
+        "Wins": 5,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 9,
+        "Wins": 2,
+        "Nick": "TheMathGeek_314"
+      },
+      "silentscout9909": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "silentscout9909"
+      },
+      "TARTARI": {
+        "Rounds": 2,
+        "Wins": 0,
+        "Nick": "TARTARI"
+      },
+      "FunLiberal": {
+        "Rounds": 10,
+        "Wins": 3,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 5,
+    "TotalFallDamage": 1147,
+    "TraitorEquipment": {
+      "Deagle V2": 2,
+      "The T-Suitcase": 7,
+      "Holy Hand Grenade": 4,
+      "Eagleflight Gun": 59,
+      "Fake Tester": 3,
+      "Radar": 1,
+      "Juggernog": 2,
+      "Defibrillator": 6,
+      "DoubleTap Root Beer": 9,
+      "Speed Cola Perk.": 11,
+      "Moto Moto": 2,
+      "SATM": 1,
+      "Zombie Vault": 1,
+      "Katana": 16,
+      "item_wallhack": 58,
+      "PHD Flopper Perk.": 15,
+      "Martyrdom": 1,
+      "Body Armor": 34,
+      "Silent Fox": 1,
+      "Stamin-Up": 4,
+      "Artillery Cannon": 7,
+      "Antlion Summoner": 6,
+      "Health Station": 3
+    },
+    "ZombieWins": 11,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 24,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 83,
+    "SwapperRounds": 27,
+    "DetectiveEquipment": {
+      "FN P90": 3,
+      "Deagle V2": 5,
+      "The T-Suitcase": 13,
+      "Stungun": 1,
+      "Radar": 5,
+      "Mystery Box": 2,
+      "DoubleTap Root Beer": 4,
+      "Speed Cola Perk.": 3,
+      "juggernaut_suit_name": 15,
+      "Handcuffs": 1,
+      "Minecraft Block": 1,
+      "PHD Flopper Perk.": 5,
+      "Body Armor": 3,
+      "Teleporter": 1,
+      "Stamin-Up": 2,
+      "golden_deagle_name": 28,
+      "Random Tester": 10,
+      "Command Prompt": 19
+    }
+  },
+  "pTARTARI": {
+    "KillerWins": 0,
+    "MercenaryRounds": 6,
+    "JesterRounds": 0,
+    "KillerRounds": 0,
+    "KilledFirst": 11,
+    "GlitchWins": 0,
+    "HypnotistRounds": 9,
+    "TotalRoundsPlayed": 136,
+    "InnocentRounds": 67,
+    "AssassinRounds": 0,
+    "HypnotistWins": 1,
+    "AssassinWins": 0,
+    "GlitchRounds": 0,
+    "VampireRounds": 0,
+    "Nickname": "TARTARI",
+    "JesterWins": 0,
+    "InnocentWins": 40,
+    "CrookedCop": 6,
+    "DetectiveRounds": 12,
+    "TriggerHappyInnocent": 11,
+    "SwapperWins": 6,
+    "ZombieRounds": 6,
+    "TraitorPartners": {
+      "Jeff_the_Shark": {
+        "Rounds": 6,
+        "Wins": 0,
+        "Nick": "Jeff_the_Shark"
+      },
+      "King_Nuggets": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "King_Nuggets"
+      },
+      "FunLiberal": {
+        "Rounds": 5,
+        "Wins": 1,
+        "Nick": "FunLiberal"
+      },
+      "nuzzels": {
+        "Rounds": 4,
+        "Wins": 2,
+        "Nick": "nuzzels"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 2,
+        "Wins": 0,
+        "Nick": "ghostNINJA-72"
+      },
+      "silentscout9909": {
+        "Rounds": 6,
+        "Wins": 1,
+        "Nick": "silentscout9909"
+      },
+      "MrBoy": {
+        "Rounds": 2,
+        "Wins": 1,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 4,
+        "Wins": 1,
+        "Nick": "Amazingbro17"
+      }
+    },
+    "TraitorRounds": 24,
+    "TotalFallDamage": 396,
+    "TraitorEquipment": {
+      "Deagle V2": 1,
+      "Orbital Headcrab Launcher": 1,
+      "AK47": 1,
+      "RPG": 3,
+      "Radar": 2,
+      "Tripwire Mine": 1,
+      "Juggernog": 3,
+      "Defibrillator": 2,
+      "Silenced AWP": 2,
+      "Speed Cola Perk.": 3,
+      "Moto Moto": 1,
+      "Peacekeeper": 2,
+      "Silenced Pistol": 3,
+      "Dragon Elites": 1,
+      "Beenade": 1,
+      "PHD Flopper Perk.": 8,
+      "Bullet Bill": 1,
+      "Body Armor": 12,
+      "Antlion Summoner": 5,
+      "Silent Fox": 2,
+      "The World": 7,
+      "Blue Bull": 1,
+      "item_wallhack": 4
+    },
+    "ZombieWins": 2,
+    "DetectiveEquipment": {
+      "PHD Flopper Perk.": 3,
+      "Radar": 1,
+      "Body Armor": 3,
+      "golden_deagle_name": 3,
+      "Stamin-Up": 3,
+      "Juggernog": 1,
+      "Star Platinum": 4,
+      "Random Tester": 1
+    },
+    "PhantomWins": 0,
+    "TraitorWins": 6,
+    "DetectiveWins": 7,
+    "VampireWins": 0,
+    "PhantomRounds": 0,
+    "SwapperRounds": 12,
+    "MercenaryWins": 3
+  },
+  "pnuzzels": {
+    "KillerWins": 4,
+    "MercenaryRounds": 21,
+    "JesterRounds": 0,
+    "KillerRounds": 5,
+    "KilledFirst": 60,
+    "GlitchWins": 0,
+    "HypnotistRounds": 21,
+    "TotalRoundsPlayed": 696,
+    "InnocentRounds": 316,
+    "AssassinRounds": 14,
+    "HypnotistWins": 16,
+    "AssassinWins": 8,
+    "DetectiveWins": 62,
+    "VampireRounds": 0,
+    "Nickname": "nuzzels",
+    "JesterWins": 0,
+    "InnocentWins": 201,
+    "CrookedCop": 10,
+    "DetectiveRounds": 88,
+    "TriggerHappyInnocent": 56,
+    "SwapperWins": 12,
+    "ZombieRounds": 64,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 13,
+        "Wins": 6,
+        "Nick": "King_Nuggets"
+      },
+      "TARTARI": {
+        "Rounds": 4,
+        "Wins": 2,
+        "Nick": "TARTARI"
+      },
+      "MrBoy": {
+        "Rounds": 14,
+        "Wins": 5,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 15,
+        "Wins": 9,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 17,
+        "Wins": 7,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 13,
+        "Wins": 5,
+        "Nick": "ghostNINJA-72"
+      },
+      "silentscout9909": {
+        "Rounds": 24,
+        "Wins": 18,
+        "Nick": "silentscout9909"
+      },
+      "FunLiberal": {
+        "Rounds": 11,
+        "Wins": 6,
+        "Nick": "FunLiberal"
+      }
+    },
+    "MercenaryWins": 12,
+    "TotalFallDamage": 15590,
+    "TraitorEquipment": {
+      "C4": 6,
+      "Orbital Headcrab Launcher": 1,
+      "Holy Hand Grenade": 6,
+      "Eagleflight Gun": 7,
+      "SlowMotion Gun": 1,
+      "Blink": 15,
+      "Fake Tester": 5,
+      "Martyrdom": 19,
+      "Traitorfier": 2,
+      "Tripwire Mine": 3,
+      "Random Launcher": 1,
+      "Dead Ringer": 25,
+      "Turret": 12,
+      "Gnome Grenade": 1,
+      "Popup Gun": 2,
+      "Fassinator": 6,
+      "Beenade": 4,
+      "PHD Flopper Perk.": 15,
+      "AK-47 Gaddafi": 2,
+      "Stamin-Up": 16,
+      "item_wallhack": 1,
+      "SurpriseCombine": 2,
+      "I like your cut g": 6,
+      "Deagle V2": 2,
+      "M2 Flamethrower": 8,
+      "Chickenator": 1,
+      "Grapple Hook": 3,
+      "Grenade Launcher": 2,
+      "Radar": 23,
+      "Body Armor": 28,
+      "Gold Dragon": 2,
+      "Flesh Wound": 3,
+      "Gigafier": 1,
+      "Silenced AWP": 1,
+      "RDMPass": 1,
+      "C4 Charge": 1,
+      "Defibrillator": 18,
+      "DoubleTap Root Beer": 12,
+      "Speed Cola Perk.": 12,
+      "Moto Moto": 4,
+      "Freeze Gun": 2,
+      "SATM": 41,
+      "Donconnon MKII": 4,
+      "Katana": 1,
+      "Death Faker": 1,
+      "Credit Printer": 1,
+      "RPG": 2,
+      "Manipulation Knife": 16,
+      "Fortnite Building": 6,
+      "Artillery Cannon": 18,
+      "The World": 1,
+      "Antlion Summoner": 5,
+      "Prop Disguiser": 2
+    },
+    "ZombieWins": 50,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 89,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 145,
+    "SwapperRounds": 22,
+    "DetectiveEquipment": {
+      "FN P90": 1,
+      "Deagle V2": 4,
+      "The T-Suitcase": 10,
+      "Bruh Bunker": 2,
+      "Star Platinum": 2,
+      "Medkit": 2,
+      "Radar": 6,
+      "Mystery Box": 36,
+      "Gigafier": 6,
+      "DoubleTap Root Beer": 12,
+      "Speed Cola Perk.": 12,
+      "Riotshield": 1,
+      "golden_deagle_name": 9,
+      "Handcuffs": 1,
+      "Random Tester": 12,
+      "Freeze Gun": 6,
+      "PHD Flopper Perk.": 20,
+      "Command Prompt": 1,
+      "Body Armor": 5,
+      "Fortnite Building": 5,
+      "Stamin-Up": 6,
+      "Minecraft Block": 1,
+      "juggernaut_suit_name": 11,
+      "Health Station": 2
+    }
+  },
+  "pFunLiberal": {
+    "KillerWins": 0,
+    "MercenaryRounds": 14,
+    "JesterRounds": 0,
+    "KillerRounds": 6,
+    "KilledFirst": 104,
+    "GlitchWins": 0,
+    "HypnotistRounds": 12,
+    "TotalRoundsPlayed": 498,
+    "InnocentRounds": 265,
+    "AssassinRounds": 2,
+    "HypnotistWins": 3,
+    "AssassinWins": 0,
+    "DetectiveWins": 29,
+    "VampireRounds": 0,
+    "Nickname": "FunLiberal",
+    "JesterWins": 0,
+    "InnocentWins": 165,
+    "CrookedCop": 23,
+    "DetectiveRounds": 61,
+    "TriggerHappyInnocent": 60,
+    "SwapperWins": 11,
+    "ZombieRounds": 31,
+    "TraitorPartners": {
+      "King_Nuggets": {
+        "Rounds": 12,
+        "Wins": 3,
+        "Nick": "King_Nuggets"
+      },
+      "nuzzels": {
+        "Rounds": 11,
+        "Wins": 6,
+        "Nick": "nuzzels"
+      },
+      "MrBoy": {
+        "Rounds": 17,
+        "Wins": 4,
+        "Nick": "MrBoy"
+      },
+      "Amazingbro17": {
+        "Rounds": 8,
+        "Wins": 4,
+        "Nick": "Amazingbro17"
+      },
+      "Jeff_the_Shark": {
+        "Rounds": 13,
+        "Wins": 5,
+        "Nick": "Jeff_the_Shark"
+      },
+      "TheMathGeek_314": {
+        "Rounds": 12,
+        "Wins": 2,
+        "Nick": "TheMathGeek_314"
+      },
+      "ghostNINJA-72": {
+        "Rounds": 10,
+        "Wins": 3,
+        "Nick": "ghostNINJA-72"
+      },
+      "TARTARI": {
+        "Rounds": 5,
+        "Wins": 1,
+        "Nick": "TARTARI"
+      },
+      "silentscout9909": {
+        "Rounds": 17,
+        "Wins": 6,
+        "Nick": "silentscout9909"
+      }
+    },
+    "MercenaryWins": 10,
+    "TotalFallDamage": 2912,
+    "TraitorEquipment": {
+      "Silenced AWP": 8,
+      "Speed Cola Perk.": 14,
+      "Chickenator": 2,
+      "Dragon Elites": 1,
+      "Blue Bull": 7,
+      "PHD Flopper Perk.": 14,
+      "Radar": 34,
+      "Body Armor": 32,
+      "Silent Fox": 1,
+      "Stamin-Up": 9,
+      "The World": 1,
+      "DoubleTap Root Beer": 8,
+      "RPG": 4
+    },
+    "ZombieWins": 17,
+    "PhantomRounds": 0,
+    "PhantomWins": 0,
+    "TraitorWins": 31,
+    "GlitchRounds": 0,
+    "VampireWins": 0,
+    "TraitorRounds": 91,
+    "SwapperRounds": 16,
+    "DetectiveEquipment": {
+      "Deagle V2": 4,
+      "The T-Suitcase": 2,
+      "Star Platinum": 7,
+      "Stungun": 9,
+      "Radar": 9,
+      "Blue Bull": 2,
+      "Gigafier": 2,
+      "S&W 500": 2,
+      "Speed Cola Perk.": 5,
+      "golden_deagle_name": 21,
+      "Handcuffs": 11,
+      "Freeze Gun": 1,
+      "PHD Flopper Perk.": 7,
+      "Visualizer": 1,
+      "Body Armor": 4,
+      "Stamin-Up": 3,
+      "DoubleTap Root Beer": 4,
+      "Health Station": 3
+    }
+  }
+}
