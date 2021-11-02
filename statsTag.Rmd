@@ -46,7 +46,7 @@ dequipClean <- dequip %>% pivot_longer(
   values_drop_na = TRUE
 )
 ```
-```{r}
+```{r, include=FALSE}
 tequip$Player_Name <- as.factor(tequip$Player_Name)
 tequipClean <- tequip %>% pivot_longer(
   !c('Player_Name'),
@@ -63,11 +63,28 @@ overallStatTP <- tpartnersClean %>% group_by(stat) %>% summarise(overall = sum(c
 overallStatD <- dequipClean %>% group_by(stat) %>% summarise(overall = sum(count))
 ```
 
+
 This Graph here shows off the total rounds played of each player
 ```{r Rounds}
 ggplot(pstats, aes(y=TotalRoundsPlayed,x=Player_Name, fill=Player_Name)) + geom_bar(stat = "Identity") + geom_text(aes(label=TotalRoundsPlayed), vjust=1.6, color="white", size=3.5) + ggtitle("Total Rounds Played") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 ```
+
+```{r Overall-Stats, include=FALSE}
+overallPStats <- read_excel('mydata.xlsx')
+avgWin <- overallPStats %>% pivot_wider(names_from = stat,values_from = overall) %>% group_by(role) %>% summarise(winPercent=Wins/Rounds)
+```
+
+```{r Stats-Graph}
+overallPStats %>% filter(stat=="Rounds") %>% ggplot(aes(x=role,y=overall,fill=role))+geom_bar(stat = "Identity")  + geom_text(aes(label=overall), vjust=1.6, color="black", size=3.5) + ggtitle("Rounds played as each role")
+overallPStats %>% filter(stat=="Rounds" & role!="Innocent") %>% ggplot(aes(x="",y=overall/4715,fill=role)) + 
+  geom_bar(stat="identity", width=1,color="white") +
+  coord_polar("y", start=0) +
+  theme_void()
+avgWin %>% ggplot(aes(x=role,y=winPercent,fill=role))+geom_bar(stat = "Identity")+geom_text(aes(label=sprintf("%0.2f", round(winPercent, digits = 2))), vjust=1.6, color="black", size=3.5)
+```
+
+
 
 ```{r Traitor}
 ggplot(pstats,aes(x=TraitorWins, y=TraitorRounds, fill=Player_Name)) + geom_point() + ggtitle("Traitor Rounds vs. Traitor wins") +
@@ -102,7 +119,7 @@ pstats %>% group_by(Player_Name,InnocentRounds,InnocentWins) %>%
 ```{r Innocent-Percent}
 pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=InnocentRounds/TotalRoundsPlayed) %>% 
   ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as innocent") +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(percentPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
 ```
 
 
@@ -121,7 +138,7 @@ pstats %>% group_by(Player_Name,DetectiveRounds,DetectiveWins) %>%
 ```{r Detective-Percent}
 pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=DetectiveRounds/TotalRoundsPlayed) %>% 
   ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as detective") +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(percentPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
 ```
 
 ```{r Zombie}
@@ -139,7 +156,7 @@ pstats %>% group_by(Player_Name,Zombiewins,ZombieRounds) %>%
 ```{r Zombie-Percent}
 pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=ZombieRounds/TotalRoundsPlayed) %>% 
   ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as zombie") +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(percentPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
 ```
 
 ```{r Hypnotist}
@@ -157,7 +174,7 @@ pstats %>% group_by(Player_Name,HypnotistWins,HypnotistRounds) %>%
 ```{r Hypnotist-Percent}
 pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=HypnotistRounds/TotalRoundsPlayed) %>% 
   ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as hypnotist") +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(percentPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
 ```
 
 ```{r CrookedCop}
@@ -175,6 +192,16 @@ pstats %>% group_by(Player_Name, InnocentRounds, TriggerHappyInnocent) %>%
   summarise(Shootyness=TriggerHappyInnocent/InnocentRounds) %>%
   arrange(desc(Shootyness))
 ```
+
+```{r Killed-First}
+ggplot(pstats,aes(x=Player_Name,y=KilledFirst,fill=Player_Name)) + geom_bar(stat = "Identity")  + geom_text(aes(label=KilledFirst), vjust=1.6, color="Blue", size=3.5) + ggtitle("Amount of times killed first") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+
+ggplot(pstats, aes(x=Player_Name, y=KilledFirst/TotalRoundsPlayed, fill=Player_Name)) + 
+  geom_bar(stat="identity") + ggtitle("Percentage of times killed first") +
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(KilledFirst/TotalRoundsPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
+```
+
 
 ```{r Ledges}
 ggplot(pstats,aes(x=Player_Name,y=TotalFallDamage, fill=Player_Name)) + geom_bar(stat = "Identity")  + geom_text(aes(label=TotalFallDamage), vjust=1.6, color="Blue", size=3.5) + ggtitle("People least safe near ledges") +
