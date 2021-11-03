@@ -101,7 +101,7 @@ pstats %>% group_by(Player_Name,TraitorRounds,TraitorWins) %>%
 ```{r Traitor-Percent}
 pstats %>% group_by(Player_Name) %>% summarise(percentPlayed=TraitorRounds/TotalRoundsPlayed) %>% 
   ggplot(aes(y=percentPlayed,x=Player_Name,fill=Player_Name)) + geom_bar(stat = "Identity") + ggtitle("Percent of rounds played as traitor") +
-  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+  theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))+geom_text(aes(label=sprintf("%0.2f", round(percentPlayed, digits = 2))), vjust=1.6, color="black", size=3.5)
 ```
 
 ```{r Innocent}
@@ -215,6 +215,7 @@ dequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 dequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
 ```
+
 ```{r MostBasicUser}
 dequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(equipBought=n()) %>% 
   ggplot(aes(x=Player_Name,y=equipBought, fill=Player_Name)) + geom_bar(stat = "Identity")  +
@@ -222,6 +223,30 @@ dequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(eq
   ggtitle("Number of different detective equipment bought")
 
 ```
+
+```{r Top5-Detective}
+dequipClean  %>% filter(Player_Name=="Amazingbro17") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="FunLiberal") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="ghostNINJA-72") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="Jeff_the_Shark") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="King Nuggets") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="MrBoy") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="nuzzels") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="silentscout9909") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="TARTARI") %>% 
+  slice_max(count,n=5)
+dequipClean  %>% filter(Player_Name=="TheMathGeek_314") %>% 
+  slice_max(count,n=5)
+```
+
 
 
 
@@ -243,6 +268,29 @@ tequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(eq
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) + 
   ggtitle("Number of different traitor equipment bought")
 
+```
+
+```{r Top5-Traitor}
+tequipClean  %>% filter(Player_Name=="Amazingbro17") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="FunLiberal") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="ghostNINJA-72") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="Jeff_the_Shark") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="King Nuggets") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="MrBoy") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="nuzzels") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="silentscout9909") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="TARTARI") %>% 
+  slice_max(count,n=5)
+tequipClean  %>% filter(Player_Name=="TheMathGeek_314") %>% 
+  slice_max(count,n=5)
 ```
 
 
