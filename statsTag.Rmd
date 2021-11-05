@@ -4,7 +4,13 @@ author: "Christopher Spartz"
 date: "10/30/2021"
 output: html_document
 ---
-
+<style type="text/css">
+.main-container {
+  max-width: 1800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -14,6 +20,7 @@ library(tidyverse)
 library(ggplot2)
 library(ggrepel)
 library(readxl)
+library(plotly)
 pstats <- read_excel('TTTStatsTag.xlsx', sheet='PlayerStats')
 tpartners <- read_excel('TTTStatsTag.xlsx', sheet='TraitorPartners')
 dequip <- read_excel('TTTStatsTag.xlsx', sheet='DetectiveEquipment')
@@ -64,7 +71,8 @@ overallStatD <- dequipClean %>% group_by(stat) %>% summarise(overall = sum(count
 ```
 
 
-This Graph here shows off the total rounds played of each player
+This Graph here shows off the total rounds played of each player. Some of the stats here might be a little off due to some play testing rounds making their way into the data.
+
 ```{r Rounds}
 ggplot(pstats, aes(y=TotalRoundsPlayed,x=Player_Name, fill=Player_Name)) + geom_bar(stat = "Identity") + geom_text(aes(label=TotalRoundsPlayed), vjust=1.6, color="white", size=3.5) + ggtitle("Total Rounds Played") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
@@ -216,14 +224,16 @@ dequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>
 dequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
 ```
 
+This graph shows off the number of different equipment that each player has bought as detective.
 ```{r MostBasicUser}
 dequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(equipBought=n()) %>% 
-  ggplot(aes(x=Player_Name,y=equipBought, fill=Player_Name)) + geom_bar(stat = "Identity")  +
+  ggplot(aes(x=Player_Name,y=equipBought, fill=Player_Name)) + geom_bar(stat = "Identity") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5)) + 
   ggtitle("Number of different detective equipment bought")
 
 ```
 
+These stats show off the top 5 most bought detective equipment for each player.
 ```{r Top5-Detective}
 dequipClean  %>% filter(Player_Name=="Amazingbro17") %>% 
   slice_max(count,n=5)
@@ -249,10 +259,11 @@ dequipClean  %>% filter(Player_Name=="TheMathGeek_314") %>%
 
 
 
-
+This shows how much each player has bought each detective equipment.
 ```{r Detective-Equipment, fig.height=10, fig.width=12}
-dequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=5, scales = "free_y") +
+p <- dequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=5, scales = "free_y") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+ggplotly(p)
 ```
 
 
@@ -262,6 +273,8 @@ tequipClean %>% group_by(stat) %>% summarise(overallTimesBought = sum(count)) %>
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
 tequipClean %>% group_by(stat) %>% summarise(percentBought=sum(count)/1172) %>% arrange(desc(percentBought))
 ```
+
+This graph shows how many different traitor equipment each player has bought.
 ```{r MostBasicTraitor}
 tequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(equipBought=n()) %>% 
   ggplot(aes(x=Player_Name,y=equipBought, fill=Player_Name)) + geom_bar(stat = "Identity")  +
@@ -270,6 +283,7 @@ tequipClean %>% filter(count>0) %>% group_by(Player_Name, stat) %>% summarise(eq
 
 ```
 
+These show off the top 5 most bought traitor equipment for each player.
 ```{r Top5-Traitor}
 tequipClean  %>% filter(Player_Name=="Amazingbro17") %>% 
   slice_max(count,n=5)
@@ -294,10 +308,11 @@ tequipClean  %>% filter(Player_Name=="TheMathGeek_314") %>%
 ```
 
 
-
-```{r Traitor-Equipment, fig.height=18, fig.width=15}
-tequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=6, scales = "free_y") +
+This shows how much each player has bought each traitor equipment.
+```{r Traitor-Equipment, fig.height=16, fig.width=12}
+p <- tequipClean %>% ggplot(aes(x=Player_Name,y=count, fill=Player_Name)) + geom_bar(stat = "Identity") + facet_wrap(~stat, ncol=6, scales = "free_y") +
   theme(axis.text.x=element_text(angle=90,hjust=1,vjust=0.5))
+ggplotly(p)
 ```
 
 
